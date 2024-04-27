@@ -7,10 +7,7 @@ class RecipeView extends View {
   _errMessage = 'We could not found the recipe.Try Another One';
   _message;
 
-  // _generateMarkupError() {
-  //   return;
-  // }
-  //bunların private olmamasının sebebi başka modüllerde çağrılacak olmasıdır
+
   addHandlerRender(handlerFunc) {
     ['hashchange', 'load'].forEach(el =>
       window.addEventListener(el, handlerFunc)
